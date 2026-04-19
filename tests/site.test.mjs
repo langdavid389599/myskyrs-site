@@ -78,6 +78,10 @@ test("privacy page includes policy sections", () => {
   assert.match(html, /Privacy Policy/i);
   assert.match(html, /Information We Collect/i);
   assert.match(html, /Your Rights/i);
+  assert.match(html, /Data Retention/i);
+  assert.match(html, /International Transfers/i);
+  assert.match(html, /Device Permissions/i);
+  assert.match(html, /Third-Party Services/i);
 });
 
 test("privacy and support pages link back into the broader studio site", () => {
