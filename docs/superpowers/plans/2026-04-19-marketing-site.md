@@ -1,5 +1,7 @@
 # Marketing Site Implementation Plan
 
+> Superseded by `docs/superpowers/plans/2026-04-19-studio-site-expansion.md` after the site scope expanded from a three-page marketing site to a seven-page studio website.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Build a static three-page English marketing site for a placeholder mobile app studio, with shared styling, lightweight interactions, and automated checks suitable for GitHub + Vercel deployment.
