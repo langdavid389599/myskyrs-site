@@ -138,3 +138,8 @@ test("contact page routes support, business, and major client messages", () => {
   assert.match(html, /bussiness@myskyrs\.com/i);
   assert.match(html, /langdavid389599@myskyrs\.com/i);
 });
+
+test("app-ads.txt includes the required Google publisher entry", () => {
+  const txt = read("app-ads.txt");
+  assert.match(txt, /google\.com,\s*pub-1880293178752488,\s*DIRECT,\s*f08c47fec0942fa0/i);
+});
