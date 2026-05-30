@@ -1,5 +1,5 @@
 {
-  "name": "brightside-apps-site",
+  "name": "nullsixstudio-site",
   "private": true,
   "scripts": {
     "test": "node --test tests/site.test.mjs"
