@@ -49,9 +49,9 @@ test("all pages include the shared CSS and JS assets", () => {
 
 test("homepage includes brand and calls to action", () => {
   const html = read("index.html");
-  assert.match(html, /NullSix Studio/i);
-  assert.match(html, /View Capabilities/i);
-  assert.match(html, /Read Support Policy/i);
+  assert.match(html, /MySkyrs Studio/i);
+  assert.match(html, /Privacy Policy/i);
+  assert.match(html, /Support/i);
 });
 
 test("key pages include the expanded studio navigation", () => {
@@ -66,11 +66,11 @@ test("key pages include the expanded studio navigation", () => {
 
 test("homepage presents the studio as an iOS and IAA-focused business", () => {
   const html = read("index.html");
-  assert.match(html, /software development/i);
-  assert.match(html, /mobile software/i);
+  assert.match(html, /iOS app development/i);
+  assert.match(html, /iOS games/i);
   assert.match(html, /IAA monetization/i);
-  assert.match(html, /Capabilities/i);
-  assert.match(html, /Product Signals/i);
+  assert.match(html, /Services/i);
+  assert.match(html, /Portfolio/i);
 });
 
 test("privacy page includes policy sections", () => {
@@ -94,10 +94,10 @@ test("privacy and support pages link back into the broader studio site", () => {
 
 test("support page includes support guidance and contact details", () => {
   const html = read("support.html");
-  assert.match(html, /support@nullsixstudio\.com/i);
-  assert.match(html, /bussiness@nullsixstudio\.com/i);
-  assert.match(html, /vip@nullsixstudio\.com/i);
-  assert.match(html, /Support Queue/i);
+  assert.match(html, /support@myskyrs\.com/i);
+  assert.match(html, /bussiness@myskyrs\.com/i);
+  assert.match(html, /langdavid389599@myskyrs\.com/i);
+  assert.match(html, /Frequently Asked Questions/i);
 });
 
 test("homepage navigation links to all core pages", () => {
@@ -113,30 +113,30 @@ test("homepage navigation links to all core pages", () => {
 
 test("about page explains the studio philosophy", () => {
   const html = read("about.html");
-  assert.match(html, /About NullSix Studio/i);
-  assert.match(html, /release discipline/i);
+  assert.match(html, /About MySkyrs Studio/i);
+  assert.match(html, /iOS-focused/i);
 });
 
 test("services page lists the studio service lines", () => {
   const html = read("services.html");
-  assert.match(html, /mobile software development/i);
-  assert.match(html, /creative production systems/i);
+  assert.match(html, /iOS app development/i);
+  assert.match(html, /iOS game development/i);
   assert.match(html, /IAA advertising monetization/i);
 });
 
 test("portfolio page presents capability tracks", () => {
   const html = read("portfolio.html");
-  assert.match(html, /Product Signals/i);
-  assert.match(html, /Utility Software/i);
-  assert.match(html, /casual mobile products/i);
+  assert.match(html, /Product Tracks/i);
+  assert.match(html, /Utility Apps/i);
+  assert.match(html, /iOS Games/i);
   assert.match(html, /monetization/i);
 });
 
 test("contact page routes support, business, and major client messages", () => {
   const html = read("contact.html");
-  assert.match(html, /support@nullsixstudio\.com/i);
-  assert.match(html, /bussiness@nullsixstudio\.com/i);
-  assert.match(html, /vip@nullsixstudio\.com/i);
+  assert.match(html, /support@myskyrs\.com/i);
+  assert.match(html, /bussiness@myskyrs\.com/i);
+  assert.match(html, /langdavid389599@myskyrs\.com/i);
 });
 
 test("app-ads.txt includes the required Google publisher entry", () => {
